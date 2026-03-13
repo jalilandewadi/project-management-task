@@ -1,0 +1,303 @@
+{
+  "info": {
+    "_postman_id": "7c1127a2-daab-4866-a41a-32aa9d970cc0",
+    "name": "project  management backend api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "login",
+          "id": "0f875bc0-7967-43d1-98ec-3cd3687362e0",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/auth/login",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "register",
+          "id": "30ab7b4a-9f20-4c95-8756-598c239f8651",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/auth/register",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "77f5c1a0-4fe0-425c-adb2-e53c0aec20ef"
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "create project",
+          "id": "12993592-57f2-4ebe-8a6e-355c826c61a1",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/projects",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all projects",
+          "id": "9b2a4fcb-452a-41d2-af95-41f69d71514c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{server}}/projects",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get Project By Id",
+          "id": "3c53a86c-4578-4724-82d9-a7c84b18233d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{server}}/projects/4",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete project",
+          "id": "74da0a1e-ada8-4146-968d-2cf2ab17c0f0",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{server}}/projects/3",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update project",
+          "id": "3e26deea-dd62-4a8d-940a-6f64d2710ba0",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/projects/4",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "1bf03f3b-ba1f-4e59-aea3-1c7cbc58302d"
+    },
+    {
+      "name": "Daily Progress Reports",
+      "item": [
+        {
+          "name": "create dpr",
+          "id": "57a8659c-f034-4949-bc0d-03ab54cc0074",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/projects/4/dpr",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects",
+                "4",
+                "dpr"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get dpr",
+          "id": "643132cf-f30a-404b-9f5c-2cd953156dd0",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer TOKEN",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{server}}/projects/2/dpr",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "projects",
+                "2",
+                "dpr"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "a8d31a4a-14d0-4aae-8e67-7c96f372b751"
+    }
+  ]
+}
